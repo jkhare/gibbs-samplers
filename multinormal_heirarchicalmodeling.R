@@ -66,7 +66,7 @@ plot(colMeans(THETA.FINAL.SCHOOL), ybar.school)
 mean(ybar.school)
 mean(SMT.FINAL.SCHOOL[,2])
 
-# Posterior density of R
+# Posterior density of R (ratio of between-sample to total variance)
 R<-NULL
 for (i in 1:dim(SMT.FINAL.SCHOOL)[1]){
   R[i] <- SMT.FINAL.SCHOOL[i,3]/(SMT.FINAL.SCHOOL[i,1] + SMT.FINAL.SCHOOL[i,3])
